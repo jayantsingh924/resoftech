@@ -1,13 +1,27 @@
 
   <?php 
-     
+  session_start();
+
+  if (@$_SESSION['admin_login'] != '') 
+  {
+    $email = $_SESSION['email'];
      define('TITLE', 'Admin Dashboard');
      define('PAGE', 'dashboard');
      define('MENU', 'menu');
      include('../headers/connection.php');
      include('sidebar.php'); 
+   
+  }
+  else
+  {
+      echo "<script> location.href='login.php';</script>";
+  }
+     
+     
 
   ?>
+
+
 
 <div style="padding-top: 35px;">
 
@@ -31,7 +45,7 @@
 
 <div class="col">
 <div class="card text-white bg-default mb-3 shadow" style="max-width: 20rem;">
-<div class="card-header"> <font color="black" style="font-size: larger;">Dicussion</font></div>
+<div class="card-header"> <font color="black" style="font-size: larger;">Dicussion's</font></div>
 <div class="card-body">
 <div class="row">
 <div class="col">

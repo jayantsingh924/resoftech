@@ -1,6 +1,6 @@
 
   <?php 
-     
+     session_start();
      define('TITLE', 'Admin Login');
      define('PAGE', 'adminlogin');
      include('../headers/header.php');
@@ -24,6 +24,7 @@ if ($result->num_rows == 1)
    {
     $_SESSION['admin_login'] = true;
     $_SESSION['email'] = $email;
+
      echo "<script> location.href='dashboard.php';</script>";
      exit;
    }

@@ -3,15 +3,10 @@
    
 <?php 
    session_start();
-   define('TITLE', 'Login Page');
+   define('TITLE', 'User Login');
    define('PAGE', 'login');
-   
    include('../headers/header.php'); 
-
-?>
-
-
-  <?php include('../headers/connection.php'); ?>
+   include('../headers/connection.php'); ?>
 
 
   
@@ -25,6 +20,7 @@ $email = mysqli_real_escape_string($conn,trim($_REQUEST['email']));
 $password = mysqli_real_escape_string($conn,trim($_REQUEST['password']));
 
 $sql = "SELECT email , password FROM user WHERE email = '".$email."' AND password = '".$password."' LIMIT 1";
+
 $result = $conn->query($sql);
 if ($result->num_rows == 1) 
    {
@@ -94,11 +90,3 @@ else
  <?php include('../headers/footer.php'); ?>
 
 
-  <script type="text/javascript">
-        
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-</script>

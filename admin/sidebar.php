@@ -38,7 +38,7 @@
 
             <ul class="list-unstyled CTAs">
                 <li>
-                    <a href="logout.php" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    <a href="../user/logout.php" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 </li>
                 <li>
                     <a href="main.php" class="article">Back to Hompage</a>
