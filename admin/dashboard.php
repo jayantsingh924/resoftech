@@ -108,42 +108,37 @@
 <?php 
 
 $sql = "SELECT subject, posted_date FROM requirement ORDER BY id ASC LIMIT 6";
+
 $result = $conn->query($sql);
-$row = $result->fetch_assoc();
 $count = 0; 
-if ($result->num_rows > 0) {
 
-   ?> <table class="table table-stripd table-hover shadow-lg">
+if ($result->num_rows > 0) 
+  {
+
+?> 
+
+<table class="table table-stripd table-hover shadow-lg">
 		<tr class="table-primary">
-			<th>S.no</th>
+			<th>Sr.no</th>
 			<th>Subject</th>
-            <th>Posted Date</th>
-        </tr> <?php
-  
+      <th>Posted Date</th>
+    </tr> 
 
+<?php
+    $sno = $count+1;
+		while ($row = $result->fetch_assoc()) 
+          { 
+            echo "<tr>";
+		      	echo "<td>".$sno.".</td>";
+			      echo "<td>".$row['subject']."</td>";
+			      echo "<td>".$row['posted_date']."</td>";
+			      echo "</tr>";
+      
+            $sno++;
+          }
+echo "</table>";
 
-$sno = $count+1;
-		while ($row = $result->fetch_assoc()) {
-
-			 
-      	
-			echo "<tr>";
-			echo "<td>".$sno." .</td>";
-			echo "<td>".$row['subject']."</td>";
-			
-			echo "<td>".$row['posted_date']."</td>";
-			echo "</tr>";
-
-			
-			$sno++;
-
-		}
-	
-		?>
-	</table>
-<?php 
-
-}
+    }
 
 ?>
 

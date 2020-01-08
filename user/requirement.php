@@ -1,10 +1,10 @@
 
 <?php 
 
-
+session_start();
 define('TITLE', 'Requirement');
 define('PAGE', 'requirement');
- define('MENU', 'menu');
+define('MENU', 'menu');
 include('nav.php'); 
 
 
@@ -36,9 +36,9 @@ include('../headers/connection.php');
                
                     $_SESSION['id'] = $genid;
                     $_SESSION['table'] = 'requirement';
+
                     echo "<script> window.open('srsucess.php', '_blank')</script>";
-                   //  echo "<script> location.href='srsucess.php' target='_blank';</script>";
-                    //print_r($_SESSION); die('in requirement page');
+                   
                     
                   }
                 else

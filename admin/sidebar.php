@@ -10,6 +10,10 @@
                        <a href="dashboard.php"><i class="fas fa-user"></i> Dashboard</a>
                     </li>
                     <li class="nav-item"> 
+                        <a class="nav-link-<?php if(PAGE == 'status'){ echo 'active'; }?>" 
+                            href="status.php"><i class="fas fa-calendar-check"></i> Status</a>
+                    </li>
+                    <li class="nav-item"> 
                         <a class="nav-link-<?php if(PAGE == 'workorder'){ echo 'active'; }?>" 
                             href="workorder.php"><i class="fas fa-plus-circle"></i> Work Order</a>
                     </li>
@@ -56,9 +60,7 @@
                         <i class="fas fa-align-left"></i>
                         <span> Sidebar </span>
                     </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
+                   
 
               
                 </div>

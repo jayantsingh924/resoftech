@@ -2,10 +2,14 @@
     </div>
 </div>
 
+
 <!--==========================
     Footer
   ============================-->
   <footer id="footer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+  <marquee><a class="navbar-brand" href="#"><b>RIPPLE</b><b style="color: red;">EFFECT</b> SOFTECH SERVICES PVT. LTD.</a></marquee>
+ </nav>
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -28,7 +32,7 @@
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
-            <p>
+            <p style="color:white;">
               A108 Adam Street <br>
               New York, NY 535022<br>
               United States <br>
@@ -38,8 +42,8 @@
 
             <div class="social-links">
               <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-thumbs-up"></i></a>
+              <a href="#" class="instagram"><i class="fas fa-video"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
@@ -48,7 +52,7 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <p style="color:white;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>

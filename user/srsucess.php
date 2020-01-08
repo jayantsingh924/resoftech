@@ -1,5 +1,5 @@
 <?php 
-  
+    session_start();
     define('TITLE', 'Success');
     define('PAGE', 'success');
     ?>
@@ -30,33 +30,24 @@
 
   <!-- Main Stylesheet File -->
   <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/style2.css" rel="stylesheet">
+  <link href="../css/style2.css" rel="stylesheet">
 
     <style type="text/css">
-  
-  .nav-link-active
-          {
-            color: #fff; 
-            background: #17a2b8;
-          }
-
-
-
+          .nav-link-active
+            {
+              color: #fff; 
+              background: #17a2b8;
+            }
     </style>
 
-  <!-- =======================================================
-    Theme Name: NewBiz
-    Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+  
 </head>
 
     <?php
-session_start();
+
   
     include('../headers/connection.php'); 
-    @session_start();
+  
       if ($_SESSION['is_login']) 
          { 
          	
